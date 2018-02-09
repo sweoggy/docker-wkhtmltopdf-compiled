@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+    wkhtmltopdf:
+        build: ./docker/
+        volumes:
+            - ./docker/bin:/tmp/bin
+        tty: true
+        user: root
